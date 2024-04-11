@@ -4,6 +4,8 @@ PU.1 (SPI1) is a crucial transcription factor in hematopoiesis, yet its role in 
 ![image](https://github.com/YenLab/Human_SPI1_Regulate_EHT/blob/main/GraphSummary/GraphSummary.png)
 
 ## Code & Data
-**scRNA_seq_analysis.R**: Custom script for single-cell data analysis
+**scRNA_seq_analysis.R**: Custom script for single-cell data analysis. Input for single-cell data analysis can be found [here](https://drive.google.com/drive/folders/1mEFJsbRlAax4OhejmbT7pieoYd4Gm4X-?usp=sharing)
 
-Input for single-cell data analysis can be found [here](https://drive.google.com/drive/folders/1mEFJsbRlAax4OhejmbT7pieoYd4Gm4X-?usp=sharing)
+**RNA&ATAC-seq_analysis.R**: Custom script for RNA&ATAC-seq data analysis. Input for RNA&ATAC-seq data analysis can be found [here](https://drive.google.com/drive/folders/1Ubt6ImqD9bPsXaVJm43Jvf00uCvCwjd3?usp=sharing)
+
+
