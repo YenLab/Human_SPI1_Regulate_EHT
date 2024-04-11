@@ -246,7 +246,7 @@ motif_GR <- unlist(motif_ix)
 motif_GR$TF_id <- gsub("(MA[0-9]{4}\\.[0-9]_)", "", names(motif_GR))
 set.seed(20220811)
 
-## tf influence trend between samples
+## TF influence trend between samples
 findIT_MARA(input_feature_id = peak_name,
             peak_GR = ATACdynamictop,
             peakScoreMt = ATAC_norcount[peak_name,],
