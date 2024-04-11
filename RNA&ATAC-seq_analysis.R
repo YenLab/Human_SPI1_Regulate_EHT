@@ -288,7 +288,7 @@ table(cluster$cluster) ###see Fig.2B
 
 ## Calculate correlation between gene expression and TF activity (Fig.S2H)
 allpeakavtivity <- (MARA_mt_merge - rowMeans(MARA_mt_merge))/rowSds(MARA_mt_merge)
-dynamicTF <- read.csv("E:/OneDrive/share_with_kyq/分析重复/dynamicTFcount.csv")
+dynamicTF <- read.csv("dynamicTFcount.csv")
 rownames(dynamicTF) <- dynamicTF[,1]
 dynamicTF <- dynamicTF[,-1]
 tfoverlap <- intersect(rownames(dynamicTF),rownames(allpeakavtivity))
@@ -324,10 +324,10 @@ txdb <- makeTxDbFromGFF("Homo_sapiens.GRCh38.104.gtf.gz",format="gtf")
 promoter <- getPromoters(TxDb=txdb, upstream=3000, downstream=3000)
 
 ## bed files output from peak calling based on merged diffbind consensus peak
-files = list(PSC="E:/OneDrive/share_with_kyq/分析重复/peak bed/PSCintersect.bed",
-             VME="E:/OneDrive/share_with_kyq/分析重复/peak bed/VMEintersect.bed",
-             EPC="E:/OneDrive/share_with_kyq/分析重复/peak bed/EPCintersect.bed",
-             HPC="E:/OneDrive/share_with_kyq/分析重复/peak bed/HPCintersect.bed")
+files = list(PSC="PSCintersect.bed",
+             VME="VMEintersect.bed",
+             EPC="EPCintersect.bed",
+             HPC="HPCintersect.bed")
 options(ChIPseeker.ignore_1st_exon = T)
 options(ChIPseeker.ignore_1st_intron = T)
 options(ChIPseeker.ignore_downstream = T)
